@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="assets/cloudy.png" type="image/x-icon">
+    <link rel="stylesheet" href="w.css">
+    <script src="w.js" defer></script>
+    <script src="https://kit.fontawesome.com/1a48c47b52.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="weather__header">
+            <form class="weather__search" method="get" role="search">
+                <input type="text" placeholder="Search for a city" class="weather__searchform" aria-label="City search">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </form>
+            <div class="weather__units" role="tablist">
+                <button class="unit__celsisus" aria-selected="true">&deg;C</button>
+                <button class="unit__fharenheit" aria-selected="false">&deg;F</button>
+            </div>
+        </header>
+        <main class="weather__body">
+            <h1 class="weather__city">City Name</h1>
+            <div class="weather__datetime">
+                <p>Date and Time</p>
+            </div>
+            <div class="weather__forecast">
+                <p>Cloudy</p>
+            </div>
+            <div class="weather__icon">
+                <img src="https://banner2.cleanpng.com/20240115/jgl/transparent-icon-umbrella-rain-red-umbrella-weather-umbrella-in-rain-with-cloudy-blue-1710921644082.webp" alt="Weather Icon">
+            </div>
+            <p class="weather__temperature">
+                18&deg;C
+            </p>
+            <div class="weather__minmax">
+                <p>Min: 12&deg;C</p>
+                <p>Max: 16&deg;C</p>
+            </div>
+        </main>
+        <section class="weather__info">
+            <div class="weather__card">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <div>
+                    <p>Real Feel</p>
+                    <p class="weather__realfeel">18&deg;C</p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="weather__humidity">18%</p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind</p>
+                    <p class="weather__wind">18 km/h</p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-stopwatch"></i>
+                <div>
+                    <p>Pressure</p>
+                    <p class="weather__pressure">1012 hPa</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
